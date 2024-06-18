@@ -1,0 +1,47 @@
+
+.grid-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo-grid {
+    width: 100%;
+    display: flex;
+    font-size: large;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.each-titulo {
+    width: 16%;
+    border: solid 1px;
+    --tw-border-opacity: 1;
+    border-color: rgb(63 63 70 / var(--tw-border-opacity));
+    --tw-bg-opacity: 1;
+    background-color: rgb(161 161 170 / var(--tw-bg-opacity));
+    text-align: center;
+}
+
+/* w-full flex text-lg font-medium */
+
+.texto-grid {
+    width: 100%;
+    display: flex;
+    font-size: 1.125rem/* 18px */;
+    line-height: 1.75rem/* 28px */;
+    font-weight: 500;
+}
+
+/* w-1/2 border border-zinc-400 pl-2 */
+
+.each-texto {
+    width: 16%;
+    border: solid 1px;
+    --tw-border-opacity: 1;
+    border-color: rgb(161 161 170 / var(--tw-border-opacity));
+    padding-left: 0.5rem/* 8px */;
+}
+
+.titulo-nome, .texto-nome {
+    width: 36%;
+}

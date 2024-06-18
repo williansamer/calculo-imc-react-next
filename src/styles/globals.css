@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+@import "./dadosImc/dadosImc.css";
+@import "./grid/grid.css";
+
 .destaque-normal {
   color: rgb(56, 56, 56);
   background-color: rgb(47, 255, 109);
