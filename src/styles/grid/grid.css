@@ -43,5 +43,20 @@
 }
 
 .titulo-nome, .texto-nome {
-    width: 36%;
+    width: 34%;
+}
+
+.titulo-status, .texto-status {
+    width: 2%;
+}
+
+.verde {
+    background-color: rgb(47, 255, 109);
+}
+
+.amarelo {
+    background-color: rgb(244, 255, 85);
+}
+.vermelho {
+    background-color: rgb(255, 85, 85);
 }

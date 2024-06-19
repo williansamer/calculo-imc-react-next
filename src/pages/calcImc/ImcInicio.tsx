@@ -14,6 +14,12 @@ export default function ImcInicio() {
         setResultadoImc(res);
     }
 
+    // const dataAtual = new Date();
+
+    // const dia = dataAtual.getDate(); // Obtém o dia do mês (1 a 31)
+    // const mes = dataAtual.getMonth() + 1; // Obtém o mês (0 a 11 --- lembre-se de adicionar 1)
+    // const ano = dataAtual.getFullYear(); // Obtém o ano (YYYY)
+
     return(
         <div className="flex flex-col gap-5 border border-black p-2 bg-zinc-500">
             <p className="font-bold text-2xl text-zinc-100">Calculando Índice de Medida Corporal</p>
@@ -26,7 +32,8 @@ export default function ImcInicio() {
                     query: {
                         p_peso: peso,
                         p_altura: altura,
-                        p_imc: resultadoImc
+                        p_imc: resultadoImc,
+                        p_status: resultadoImc < 18.4 ||  (resultadoImc >= 25 && resultadoImc <= 29.9) ? "amarelo" : resultadoImc >= 18.5 && resultadoImc <= 24.9 ? "verde" : "vermelho"
                     }}}
             >Dados IMC</Link>
             <div className="text-2xl">Resultado: <span className="text-green-300 bg-zinc-600 p-2 rounded-md">{resultadoImc}</span></div>
